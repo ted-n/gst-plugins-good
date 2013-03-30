@@ -46,8 +46,10 @@ AG_GST_LIBTOOL_PREPARE
 AS_LIBTOOL(GST, 2, 0, 2)
 
 dnl *** required versions of GStreamer stuff ***
-GST_REQ=1.1.0
-GSTPB_REQ=1.1.0
+dnl GST_REQ=1.1.0
+dnl GSTPB_REQ=1.1.0
+GST_REQ=1.0.0
+GSTPB_REQ=1.0.0
 
 dnl *** autotools stuff ****
 
@@ -302,7 +304,7 @@ dnl *** plug-ins to include ***
 
 dnl Non ported plugins (non-dependant, then dependant)
 dnl Make sure you have a space before and after all plugins
-GST_PLUGINS_NONPORTED="osx_audio "
+GST_PLUGINS_NONPORTED=" "
 AC_SUBST(GST_PLUGINS_NONPORTED)
 
 dnl these are all the gst plug-ins, compilable without additional libs

@@ -46,8 +46,8 @@
  *
  */
 
-#include <gst/gst.h>
 #include "gstosxaudioelement.h"
+#include <gst/gst.h>
 
 static void
 gst_osx_audio_element_interface_init (GstOsxAudioElementInterface * iface);
